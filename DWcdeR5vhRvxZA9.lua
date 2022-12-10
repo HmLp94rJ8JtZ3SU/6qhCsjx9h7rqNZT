@@ -1310,7 +1310,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 				Value.Text = tostring(tochange and math.floor((tochange / max) * (max - min) + min) or 0)
 				pcall(callback,tochange)
 			end
-			return SliderFunc
+			return Slider
 		end
 		function ContainerContent:Dropdown(text,list,font,callback)
 			local DropFunc = {}
